@@ -1,0 +1,477 @@
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 680px;
+  }
+  .slider__btns {
+    width: 100px;
+  }
+  .bg__horizont,
+  .bg__vertical {
+    display: none;
+  }
+  .bg-line::before {
+    left: -275px;
+
+  }
+  .header.container {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .footer {
+    margin-bottom: 0;
+  }
+
+  .menu {
+    padding: 129px 0 50px 8.3%;
+    &__nav {
+      padding-bottom: 38px;
+    }
+    &__btn {
+      margin-right: 53px;
+    }
+
+  }
+
+  .hero {
+    &__slide {
+      padding-top: 168px;
+      &_dark-red {
+        background-position: -23px 468px;
+        background-size: 156%;
+      }
+      &_green.hero__slide {
+        background-position: -138px 385px;
+        background-size: 448%;
+      }
+    }
+    &__title {
+      margin-bottom: 20px;
+      padding: 0;
+      font-size: 61px;
+      line-height: 78px;
+    }
+    &__text {
+      width: 50%;
+      padding-left: 10%;
+    }
+    &__btns {
+      top: 336px;
+      right: calc(31% - 172px);
+    }
+    &__list {
+      margin-top: 102px;
+      flex-wrap: wrap;
+    }
+    &__item:last-child {
+      flex: 0 0 328px;
+      margin: 0 auto;
+    }
+    &__item:not(:last-child) {
+      flex: 0 0 265px;
+    }
+    &__img {
+      margin-bottom: 33px;
+      &_facade {
+        margin-left: 32px;
+        margin-bottom: 15px;
+        height: 144px;
+        padding-top: 10px;
+      }
+      &_adress {
+        height: 124px;
+      }
+      &_memorial {
+        padding-top: 40px;
+        padding-left: 22px;
+        margin-bottom: 21px;
+        height: 124px;
+      }
+    }
+    &__subtitle {
+      margin-bottom: 8px;
+    }
+    &__desc {
+      padding-left: 10px;
+    }
+    &__main {
+      &-adress {
+        padding-top: 40px;
+      }
+      &-facade {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 37px;
+      }
+      &-memorial {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 50px;
+      }
+    }
+  }
+  .img {
+    &__adress {
+      margin: 0 auto;
+      width: 617px;
+    }
+    &__facade {
+      margin-bottom: 25px;
+      height: 295px;
+    }
+    &__memorial {
+      margin-top: 0;
+      margin-bottom: 29px;
+      flex: 0 0 257px;
+    }
+  }
+  .info {
+    &__adress {
+      margin-top: 15px;
+      padding-left: 69px;
+    }
+    &__facade {
+      padding-left: 39px;
+    }
+  }
+  .catalog__btn {
+    margin-right: 16px;
+  }
+
+
+  .about-us {
+    padding-top: 158px;
+    &__title {
+      margin-bottom: 17px;
+    }
+    &__text {
+      flex: 0 0 0;
+      margin-bottom: 43px;
+    }
+    &__desc {
+      padding-left: 10px;
+      margin-bottom: 57px;
+      line-height: 21px;
+    }
+    &__content {
+      height: 100%;
+      justify-content: flex-end;
+      flex-direction: column-reverse;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bg__horizont {
+    bottom: 2.6%;
+    left: -2.95%;
+    font-size: 154px;
+  }
+
+
+  .advantages {
+    &__btns {
+      width: 107px;
+      bottom: 18.5%;
+    }
+    &__btn {
+      display: none;
+    }
+    &__content {
+      padding-top: 179px;
+      flex-direction: column;
+    }
+    &__img {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      height: 366px;
+    }
+    &-wrapper {
+      &-two {
+        flex: 0 0 0;
+        padding: 0;
+        margin-bottom: 8%;
+        &__title {
+          font-size: 48px;
+          &::before {
+            margin-right: 25px;
+          }
+        }
+        &__text {
+          padding-left: 7px;
+        }
+      }
+      &-one {
+        width: 65%;
+        &__title {
+          margin-bottom: 22px;
+          font-size: 48px;
+        }
+        &__text {
+          width: 520px;
+        }
+      }
+    }
+  }
+
+
+  .adress {
+    &__swiper-slide {
+      padding-top: 142px;
+    }
+    &__btns {
+      top: 28.5%;
+      right: 8%;
+    }
+    &__desc {
+      margin-bottom: 54px;
+    }
+    &__title {
+      padding-right: 0;
+      font-size: 47px;
+      line-height: 63px;
+    }
+    &__wrapper {
+      width: 72%;
+      padding-left: 10%;
+    }
+    &__text {
+      margin-bottom: 28px;
+    }
+    &-info {
+      margin-top: 0;
+      flex-direction: column-reverse;
+      align-items: start;
+      &__wrapper {
+        padding-top: 20px;
+      }
+      &__info {
+        width: 100%;
+        padding: 0 27px;
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        box-sizing: border-box;
+      }
+      &__price {
+        padding-right: 11px;
+        font-size: 36px;
+        text-align: end;
+      }
+      &__model {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+    }
+    &__img {
+      margin-top: 0;
+      width: 98%;
+      height: 340px;
+      margin-bottom: 36px;
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  .form {
+    width: 100%;
+    &__message {
+      margin-bottom: 37px;
+    }
+  }
+
+
+  .request {
+    padding-top: 296px;
+    &__title {
+      font-size: 64px;
+      margin-bottom: 22px;
+    }
+    &__text {
+      margin-bottom: 91px;
+    }
+
+
+  }
+
+  .faq {
+    &__title {
+      font-size: 64px;
+      line-height: 62px;
+    }
+    &__text {
+      padding-left: 60px;
+      width: 85%;
+    }
+
+  }
+  .accordion-item {
+    &__content {
+      padding: 0 2% 20px 15%;
+      font-size: 14px;
+    }
+    &__number {
+      margin-right: 6%;
+    }
+  }
+
+
+
+  .contacts {
+    padding-top: 228px;
+    &__title {
+      margin-bottom: 95px;
+      font-size: 64px;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__phones {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 51px;
+      background-position: 4px 11px;
+    }
+    &__number {
+      &-desc {
+        font-size: 14px;
+      }
+      font-size: 24px;
+    }
+    &__adress {
+      margin-bottom: 54px;
+      background-position: 0 22px;
+      &-text {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__email {
+      font-size: 24px;
+      padding-left: 59px;
+      background-position: 2px 1px;
+    }
+  }
+
+
+  // Страница преимуществ
+  .advantages-page {
+    &__main {
+      padding-top: 119px;
+    }
+    &__list {
+      width: 100%;
+    }
+    &__item {
+      padding-left: 22px;
+      padding-top: 177px;
+      margin-bottom: 2px;
+    }
+    &__item:nth-child(1) {
+      background-position: 0 20px;
+    }
+    &__item:nth-child(2) {
+      padding-top: 139px;
+      background-position: 19px 52px;
+    }
+    &__item:nth-child(3) {
+      padding-top: 189px;
+      background-position: 21px 48px;
+    }
+    &__title {
+      margin-bottom: 17px;
+      font-size: 24px;
+    }
+  }
+
+  // Страница каталога
+  .catalog-page {
+    padding-top: 19px;
+    &__tab {
+      font-size: 24px;
+    }
+    &__row {
+      margin-right: 0;
+    }
+    &__title {
+      flex: 0 0 52%;
+      font-size: 24px;
+    }
+    &__btn {
+      padding: 14px 36px;
+      font-size: 14px;
+    }
+    &__item {
+      flex: 0 0 48.1%;
+    }
+    &__item:not(:nth-child(3n)) {
+      margin-right: 0;
+    }
+    &__item:not(:nth-child(2n)) {
+      margin-right: 24px;
+    }
+    &__wrapper {
+      height: 236px;
+    }
+
+
+  }
+  // Детальная страница товара
+
+  .detailed-page {
+    &__bg {
+      background-position: -919px 436px;
+    }
+    &__imgs {
+      margin-right: 0;
+      margin-bottom: 37px;
+    }
+    &__info {
+      margin-bottom: 54px;
+
+    }
+    &__img-main {
+      height: 332px;
+    }
+    &__wrapper,
+    &__btn {
+      margin-left: 0;
+    }
+    &__material {
+      margin-bottom: 40px;
+    }
+    &__price {
+      margin-bottom: 17px;
+    }
+  }
+
+  .color-selection {
+    margin-bottom: 37px;
+  }
+
+  // Галерея
+  .gallery {
+    & .container {
+      margin: 0;
+    }
+    &__item {
+      width: 355px;
+    }
+    &__item:nth-child(4),
+    &__item:nth-child(5),
+    &__item:nth-child(6) {
+      display: none;
+    }
+  }
+}
+
+
+
+

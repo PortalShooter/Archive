@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "504491573318",
+    "project_id": "vernal-bonfire-319609",
+    "storage_bucket": "vernal-bonfire-319609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504491573318:android:464704f0c8faf0da948a47",
+        "android_client_info": {
+          "package_name": "com.razvitievoly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504491573318-vgjn8sjv7bqihs6phofe1u1l54nni53t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYXxzDM2kgELGgrNzWX7DDSGlUdMy6vpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504491573318-vgjn8sjv7bqihs6phofe1u1l54nni53t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504491573318:android:6a3f1e658d96ac72948a47",
+        "android_client_info": {
+          "package_name": "educounting.ru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504491573318-vgjn8sjv7bqihs6phofe1u1l54nni53t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYXxzDM2kgELGgrNzWX7DDSGlUdMy6vpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504491573318-vgjn8sjv7bqihs6phofe1u1l54nni53t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

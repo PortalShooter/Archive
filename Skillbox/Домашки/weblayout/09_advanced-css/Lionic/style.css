@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  line-height: 25px;
+  text-decoration: none;
+  color: #1c1c1c;
+}
+ul {
+  padding: 0;
+}
+h1 {
+  font-weight: 300;
+  line-height: 52px;
+}
+h2 {
+  font-weight: 300;
+}
+li {
+  list-style-type: none;
+}
+nav {
+  height: 100%;
+}
+.btn {
+  display: inline-block;
+  padding: 20px 35px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+  line-height: 1;
+
+  background-color: #3172b9;
+  border: none;
+  border-radius: 4px;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.gray-text {
+  color: #787878;
+  line-height: 25px;
+  font-size: 16px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Header */
+.top-line {
+  height: 110px;
+}
+.logo {
+  margin-right: auto;
+}
+.nav-list {
+  height: 100%;
+  margin: 0;
+}
+.nav-item {
+  font-size: 15px;
+  font-weight: 600;
+}
+.nav-item a {
+  padding-bottom: 41px;
+}
+.nav-item a:hover {
+  border-bottom: 4px #3172b9 solid;
+  color: #3172b9;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-item:last-child {
+  margin-right: 80px;
+}
+/* Hero block */
+.hero {
+  background-image: url(img/base.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero-content {
+  padding: 120px 0 130px 0;
+  max-width: 42%;
+}
+.hero-text {
+  margin-bottom: 36px;
+}
+.hero-btn {
+  width: 250px;
+  height: 58px;
+}
+.SSL {
+  padding-left: 27px;
+  margin: 15px 40px;
+
+  font-size: 11px;
+  line-height: 17px;
+
+  background-image: url(img/shield_icon.png);
+  background-repeat: no-repeat;
+}
+
+/* We Do */
+.we-do {
+  padding-top: 180px;
+  padding-bottom: 180px;
+
+  border-bottom: 1px #dadada solid;
+}
+.we-do-heading {
+  padding-bottom: 33px;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: 21px;
+}
+.we-do-description {
+  padding-bottom: 55px;
+
+  text-align: center;
+  font-weight: 400;
+}
+.we-do-item {
+  width: 270px;
+  height: 320px;
+  padding: 60px 30px 60px 30px;
+  flex-direction: column;
+
+  text-align: center;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+.we-do-item p {
+  font-size: 14px;
+  line-height: 21px;
+}
+.we-do-item:nth-child(3){
+  color: #ffffff;
+  background-color: #4086d3;
+}
+/* Reviews */
+.reviews {
+  padding: 97px 0 161px 0;
+  border-bottom: 1px #dadada solid;
+}
+.reviews-heading {
+  padding-bottom: 43px;
+}
+.reviews-item {
+  width: 370px;
+  height: 362px;
+  padding: 45px 36px 32px 36px;
+  flex-direction: column;
+
+  border: 1px solid #6b6b6b;
+  border-radius: 5px;
+}
+
+.user {
+  width: 100%;
+  padding-top: 27px;
+
+  border-top: 1px #dadada solid;
+
+}
+.avatar {
+  width: 67px;
+  height: 67px;
+  float: left;
+  margin-right: 16px;
+
+  background-color: #414141;
+  border-radius: 50%;
+  border: 2px solid #3172b9;
+}
+.name {
+  display: inline-block;
+  padding-top: 15px;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+.postskript {
+  padding-left: 2px;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+/* Contacts */
+.contacts {
+  padding: 70px 0 140px 0;
+  border-bottom: 1px #dadada solid;
+}
+.contact-heading{
+  padding-bottom: 120px;
+}
+.contacts-list {
+  align-items: flex-start;
+}
+.contacts-item {
+  flex-basis: 30%;
+}
+.contacts-icon {
+  display: block;
+  padding-bottom: 45px;
+  padding-top: 55px;
+
+  background-repeat: no-repeat;
+}
+.gps {
+  background-image: url(img/gps.png);
+}
+.text-gps {
+  width: 210px;
+}
+.phone {
+  background-image: url(img/phone.png);
+}
+.email {
+  background-image: url(img/mail.png);
+}
+/* footer */
+.footer {
+  padding: 45px 0 35px 0;
+}
+.footer-logo {
+  padding-right: 26px;
+}
+.copyright {
+  margin-right: auto;
+}
+.footer-menu-item:not(:last-child) {
+  padding-right: 37px;
+}
+.footer-menu-item:last-child {
+  padding-right: 59px;
+}
+.footer-icon-item:nth-child(1) {
+  width: 19px;
+  height: 17px;
+  padding-right: 49px;
+}
+.footer-icon-item:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  padding-right: 50px;
+}
+.footer-icon-item:nth-child(3) {
+  width: 25px;
+  height: 18px;
+}

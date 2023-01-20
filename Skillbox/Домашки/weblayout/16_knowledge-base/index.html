@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Селект -->
+  <link rel ="stylesheet" href ="Choices-master/public/assets/styles/choices.min.css ">
+  <script src ="Choices-master/public/assets/scripts/choices.min.js"></script>
+  <!-- Map -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <!-- Scrollbar -->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+  />
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <!-- Мои стили -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="checkbox">
+    <h2>Категории:</h2>
+    <label class="label-check"><input type="checkbox" class="check" checked>Динозавры
+    <span></span></label>
+    <label class="label-check"><input type="checkbox" class="check">Медведи
+    <span></span></label>
+    <label class="label-check"><input type="checkbox" class="check">Косули
+    <span></span></label>
+    <label class="label-check"><input type="checkbox" class="check">Лисы
+    <span></span></label>
+    <label class="label-check"><input type="checkbox" class="check">Волки
+    <span></span></label>
+    <label class="label-check"><input type="checkbox" class="check">Олени и лоси
+    <span></span></label>
+
+
+  </div>
+  <div>
+    <select name="select" id="selectCustom">
+      <option value="" placeholder>Материал</option>
+      <option value="">Древесина</option>
+      <option value="">Металл</option>
+      <option value="">Камень</option>
+      <option value="">Пластик</option>
+      <option value="">Композитный</option>
+      <option value="">Гипс</option>
+    </select>
+  </div>
+  <script>
+    const element = document.querySelector('#selectCustom');
+    const choices = new Choices(element,{searchEnabled: false,itemSelectText: '',shouldSort: false});
+  </script>
+
+
+  <div id="map" style="width: 460px; height: 460px"></div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+
+  <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [48.87219657376512,2.354223999999991],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 12
+        });
+        // Создание геообъекта с типом точка (метка).
+        var myPlacemark = new ymaps.Placemark([48.87219657376512,2.354223999999991], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/Map.svg',
+          iconImageSize: [28, 40],
+          iconImageOffset: [-14, -40]
+      });
+
+    // Размещение геообъекта на карте.
+    myMap.geoObjects.add(myPlacemark);
+    }
+    </script>
+
+  <div class="customScroll" data-simplebar>Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.</div>
+
+
+  <form class="form" action="">
+    <span class="form-text">Как вас зовут?</span>
+    <input class="input" type="name" placeholder="Имя*"  data-validate-field="name">
+    <span class="form-text">Укажите ваш телефон</span>
+    <input class="input" id="selector" type="tel" placeholder="Телефон*" data-validate-field="phone">
+    <span class="form-text">Укажите ваш e-mail</span>
+    <input class="input" type="name" placeholder="E-mail*"  data-validate-field="email">
+    <button class="form-btn">Заказать</button>
+  </form>
+  <script src="just-validate.min.js"></script>
+  <script src="Inputmask-5.x/dist/inputmask.min.js"></script>
+  <script>
+    var selector = document.getElementById('selector');
+    var im = new Inputmask("+7 (999)-999-99-99");
+
+    im.mask(selector);
+    new JustValidate('.form', {
+      rules: {
+        name: {
+          required: true,
+          minLength: 2,
+          maxLength: 10
+        },
+        tel: {
+          required: true,
+          function: (name, value) => {
+            const phone = selector.inputmask.unmaskedvalue()
+            return Number(phone) && phone.length === 10
+          }
+        },
+        mail: {
+          required: true,
+          email: true
+        },
+      },
+    });
+  </script>
+  <div class="tooltip">
+    <p>Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.</p>
+    <div class="marker"></div>
+    <div class="popup">Глава 2, страница 176</div>
+  </div>
+
+</body>
+</html>

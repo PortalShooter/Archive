@@ -1,0 +1,276 @@
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1195px;
+  }
+  .bg__horizont {
+    bottom: 10.6%;
+  }
+  .footer {
+    margin-bottom: 20px;
+  }
+  // Header
+  .header {
+    &__logo {
+      margin-right: 50px;
+    }
+
+  }
+  .menu {
+    &__bg_circle {
+      right: -89px;
+    }
+    &__btn {
+      padding: 15px  35px;
+    }
+    &__item {
+      font-size: 60px;
+    }
+    &__close {
+      right: 181px;
+    }
+    &__contacts {
+      margin-right: 80px;
+      padding-left: 62px;
+    }
+    &__contact {
+      margin-bottom: 21px;
+    }
+  }
+  .bg__vertical-menu {
+    top: 38%;
+    right: -31px;
+  }
+  // Hero
+  .hero {
+    &__slide {
+      padding-top: 11%;
+      &_dark-red {
+        background-position: -131px 470px;
+      }
+      &_green.hero__slide {
+        background-position: -46px 616px;
+        background-size: 126%;
+      }
+      &_red.hero__slide {
+        background-position: -396px 275px;
+        background-size: cover;
+      }
+      &_blue.hero__slide {
+        background-position: -33px 437px;
+        background-size: cover;
+      }
+    }
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__list {
+      margin-top: 104px;
+    }
+    &__btns {
+      top: 190px;
+      right: calc(31% - 300px);
+    }
+    &__text {
+      margin-bottom: 6%;
+      padding-left: 42px;
+    }
+    &__main-facade {
+      padding-top: 30px;
+    }
+    &__img_adress {
+      height: 184px;
+    }
+
+  }
+  .img {
+    &__adress {
+      position: static;
+      width: 650px;
+      margin-right: -23px;
+    }
+    &__facade {
+      padding-right: 0;
+      height: 350px;
+    }
+    &__memorial {
+      margin: -80px 0 20px 0;
+    }
+  }
+  .info {
+    &__adress {
+      width: 505px;
+      margin-top: -49px;
+      padding-left: 164px;
+    }
+    &__facade {
+      width: 534px;
+      padding-bottom: 0;
+    }
+  }
+
+
+  // Кто мы такие
+  .about-us {
+    &__title {
+      margin-bottom: 35px;
+      font-size: 74px;
+    }
+    &__text {
+      padding-top: 0;
+    }
+    &__desc {
+      margin-bottom: 66px;
+    }
+  }
+  .advantages {
+    &-wrapper {
+      &-two {
+        max-width: 460px;
+        &__title {
+          margin-bottom: 11px;
+          font-size: 68px;
+          &::before {
+            padding-left: 36px;
+          }
+        }
+        &__text {
+          width: 100%;
+          padding-left: 41px;
+        }
+      }
+      &-one__title {
+        margin-bottom: 17px;
+      }
+
+    }
+  }
+
+
+  .adress {
+    &__swiper-slide_blue {
+      background-size: cover;
+      background-position: -184px 380px;
+    }
+    &__btns {
+      top: 19%;
+      right: 10%;
+    }
+    &__desc {
+      width: 100%;
+    }
+    &__title {
+      padding-right: 120px;
+    }
+
+    &__img {
+      width: 54vh;
+    }
+    &-info {
+      margin-right: -19px;
+      &__info {
+        margin-bottom: 92px;
+      }
+    }
+  }
+
+
+  .form {
+    width: 690px;
+  }
+  .request {
+    // padding-top: 291px;
+    &__text {
+      width: 606px;
+    }
+  }
+// FAQ
+  .accordion-item {
+    width: 99%;
+    &__number {
+      margin-right: 2%;
+    }
+    &__content {
+      padding-right: 16%;
+      letter-spacing: 0.02em;
+    }
+  }
+  .contacts {
+    &__phones {
+      margin-right: 17%;
+    }
+  }
+
+  // Страница преимуществ
+  .advantages-page {
+    &__main {
+      padding-top: 220px;
+    }
+    &__item {
+      margin-bottom: 44px;
+    }
+  }
+
+  // Страница каталога
+  .catalog-page {
+    padding-top: 2px;
+    &__tab {
+      margin-right: 5%;
+    }
+    &__row {
+      margin-bottom: 7%;
+    }
+  }
+
+  // Детальная страница товара
+
+  .detailed-page {
+    &__info {
+      max-width: 488px;
+      padding-top: 2.9%;
+    }
+    &__desc {
+      margin-bottom: 17px;
+    }
+    &__wrapper {
+      margin-left: -14px;
+    }
+    &__price {
+      margin-bottom: 27px;
+    }
+    &__btn {
+      margin-left: 10px;
+    }
+    &__imgs {
+      flex-grow: 1;
+    }
+  }
+  .color-selection {
+    margin-bottom: 43px;
+  }
+
+  // Галерея
+
+  .gallery {
+    &__item {
+      width: 355px;
+    }
+    &__item:nth-child(1),
+    &__item:nth-child(5),
+    &__item:nth-child(9) {
+      height: 454px;
+    }
+    &__item:nth-child(3),
+    &__item:nth-child(4),
+    &__item:nth-child(8) {
+      height: 254px;
+    }
+    &__item:nth-child(2),
+    &__item:nth-child(6),
+    &__item:nth-child(7) {
+      height: 306px;
+    }
+  }
+}
+
+
+

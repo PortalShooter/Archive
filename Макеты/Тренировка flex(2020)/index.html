@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__background">
+            <img class="header__logo" src="img/header/header_logo.png" alt="logo">
+            <h1 class="header__title">Clear, smart, attractive design</h1>
+            <p class="header__desc">for your app, logo, website</p>
+            <div class="header__line"></div>
+            <button class="header__button read-more">READ MORE</button>
+            <img src="img/header/header_arrow.png" class="header__arrow" alt="arrow">
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link nav__link_active" href="#">HOME</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">ABOUT US</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">PORTFOLIO</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about flex">
+        <h2 class="about__title title">about</h2>
+        <p class="about__description">We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW" factor.
+            In our design process, we make sure to stay one step ahead of the latest trends,
+            never forgetting to abide by key web standards.</p>
+        <div class="about__cards">
+            <div class="about__card">
+                <div class="card__icon">
+                    <img src="img/about/about_icon1.png" alt="">
+                </div>
+
+                <div class="card__title">WEB</div>
+                <p class="card__desc">We tend to deliver unique and
+                    functional design, through
+                    innovation and creativity.
+                </p>
+            </div>
+            <div class="about__card">
+                <div class="card__icon">
+                    <img src="img/about/about_icon2.png" alt="">
+                </div>
+                <div class="card__title">iOS AND ANDROID</div>
+                <p class="card__desc">We seek to bring new businesses and
+                    customers closer together through valuable
+                    insights and proper targeting.
+                </p>
+            </div>
+            <div class="about__card">
+                <div class="card__icon">
+                    <img src="img/about/about_icon3.png" alt="">
+                </div>
+                <div class="card__title">MARKETING</div>
+                <p class="card__desc">We’ll help you establish the right goals
+                    and build the right paths. Success depends
+                    on setting the right intention.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio flex">
+        <h2 class="title">PORTFOLIO</h2>
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link nav__link_active" href="#">ALL</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">WEB</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">APPS</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">OTHER</a></li>
+        </ul>
+        <div class="photos">
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+        </div>
+        <button class="portfolio__button read-more">READ MORE</button>
+    </section>
+    <section class="partners flex">
+        <h3 class="partners__title">Our partners</h3>
+        <ul class="partners__list">
+            <li class="partners__item"><img src="img/our-partners/our_partners_icon1.png" alt="" class="our-partners__img"></li>
+            <li class="partners__item"><img src="img/our-partners/our_partners_icon2.png" alt="" class="our-partners__img"></li>
+            <li class="partners__item"><img src="img/our-partners/our_partners_icon3.png" alt="" class="our-partners__img"></li>
+            <li class="partners__item"><img src="img/our-partners/our_partners_icon4.png" alt="" class="our-partners__img"></li>
+        </ul>
+    </section>
+    <section class="contact flex">
+        <h2 class="contact__title title">CONTACT</h2>
+        <div class="contact__flex">
+            <form class="form" action="#">
+                <div class="form__row">
+                    <div class="form__block block__name">
+                        <span class="form__title">YOUR NAME</span>
+                        <input class="form__input" type="text">
+                    </div>
+                    <div class="form__block">
+                        <span class="form__title">YOUR E-MAIL</span>
+                        <input class="form__input" type="email">
+                    </div>
+                </div>
+                <div class="form__block block__message">
+                    <span class="form__title">MESSAGE</span>
+                    <textarea class="form__textarea" name="MESSAGE"></textarea>
+                </div>
+                <button class="form__button">SEND</button>
+            </form>
+            <div class="contact__block">
+                <p class="contact__text">Have an idea for a project? Just looking to
+                    explore and see the possibilities? <br>
+                    I'm here to help.</p>
+                <strong class="contact_name">Postma Elena</strong>
+                <div class="contact__icons">
+                    <a href="#" class="contact__icon">
+                        <img src="img/contact/contact_icon1.png" alt="facebook">
+                    </a>
+                    <a href="#" class="contact__icon">
+                        <img src="img/contact/contact_icon2.png" alt="in">
+                    </a>
+                </div>
+                <span class="contact_mail">e-mail: <a href="postma.elena@gmail.com">postma.elena@gmail.com</a></span>
+            </div>
+        </div>
+    </section>
+    <footer class="footer flex">
+        <img class="footer__img" src="img/footer/footer_logo.png" alt="logo">
+        <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Linkedin</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+        </ul>
+        <div class="footer__copyright">© 2015. All Rights Reserved</div>
+    </footer>
+</body>
+</html>
